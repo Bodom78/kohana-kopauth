@@ -53,7 +53,7 @@ This module uses session for data storage. If you have not done so, add a cookie
 
 This module comes with the [online demo](http://www.fkportfolio.com/playground/kopauth) included.
 
-Once configured, browse to `http://yoursite.com/kopauth` to access it. Note that this is disabled if you Kohana::$environment === Kohana::PRODUCTION.
+Once configured, browse to `http://yoursite.com/kopauth` to access it. Note that this is disabled if your Kohana::$environment === Kohana::PRODUCTION.
 
 The Kopauth class has additional methods to assist with authentication integration. View the example controller and views to help you get started.
     
