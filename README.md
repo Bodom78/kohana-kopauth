@@ -65,11 +65,13 @@ Included [Opauth](http://opauth.org/) version is 0.4.4
 
 While in theory all strategies should work, only the following have been tested.
 
-* [Disqus](https://github.com/rasa/opauth-disqus/tree/37d80669d6d932e346f95fc3b0340aba690486b3)
-* [Facebook](https://github.com/opauth/facebook/tree/28c0e53393a03a66cbfea03073d1d6aacfaddb69)
-* [Github](https://github.com/opauth/github/tree/9c4fe16dc6498b2c94f4c2a41ab93b0fe4b7fa73)
-* [Google](https://github.com/opauth/google/tree/35df77684c14acb346a8c3753ae3809852d1a47e)
-* [Instagram](https://github.com/muhdazrain/opauth-instagram/tree/6d72ae8f27f26a666562a963296937c62d43f5cb)
-* [Linkedin](https://github.com/opauth/linkedin/tree/76df2b9520b02f4e87d1d0bd6ce64a375dcba03c)
-* [(Windows) Live](https://github.com/opauth/live/tree/2a854d68cd5fbf10013afbf6008fff849f1f2d0b)
-* [Twitter](https://github.com/opauth/twitter/tree/24792d512ccc67e7d11e9249737616f039551c11)
+* [Disqus](https://github.com/rasa/opauth-disqus)
+* [Facebook](https://github.com/opauth/facebook)
+* [Flickr](https://github.com/pocket7878/opauth-flickr)
+* [Github](https://github.com/opauth/github)
+* [Google](https://github.com/opauth/google)
+* [Instagram](https://github.com/muhdazrain/opauth-instagram)
+* [Linkedin](https://github.com/opauth/linkedin)
+* [(Windows) Live](https://github.com/opauth/live)
+* [Twitter](https://github.com/opauth/twitter)
+* [Linkedin](https://github.com/opauth/linkedin)
