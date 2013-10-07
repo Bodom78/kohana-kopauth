@@ -82,6 +82,12 @@ class Kopauth extends Opauth
         switch($this->env['callback_transport'])
         { 
             case 'session':
+                // PHP >= 5.4.0
+                // if (session_status() == PHP_SESSION_NONE)
+                if ( ! isset($_SESSION))
+                {
+                    session_start();
+                }
                 if (isset($_SESSION['opauth']))
                 {
                     $this->_response = $_SESSION['opauth'];
