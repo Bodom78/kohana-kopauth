@@ -19,7 +19,7 @@ class Controller_Kopauth_Auth extends Controller
         // If missing strategy param or their already authenticated just return to start screen
         if (empty($strategy) OR $kopauth->is_authenticated($strategy))
         {
-            $this->redirect(URL::site(Route::get('kopauth')->uri()));
+            $this->redirect(Route::url('kopauth', null, true));
         }
         
         // Run opauth
@@ -37,7 +37,7 @@ class Controller_Kopauth_Auth extends Controller
             }
             
             // Redirect to start to see authed session or error flash message
-            $this->redirect(URL::site(Route::get('kopauth')->uri()));
+            $this->redirect(Route::url('kopauth', null, true));
         }
     }
     
@@ -77,10 +77,10 @@ class Controller_Kopauth_Auth extends Controller
         if ( ! Kopauth::instance()->is_authenticated($strategy))
         {
             // Not authenticated for passed provide, redirect to auth
-            $auth_route = URL::site(Route::get('kopauth')->uri(array(
+            $auth_route = Route::url('kopauth', array(
                 'action'   => 'authenticate',
                 'strategy' => $strategy
-            )));
+            ), true);
             $this->redirect($auth_route);
         }
         
@@ -99,7 +99,7 @@ class Controller_Kopauth_Auth extends Controller
     public function action_logout()
     {
         Kopauth::instance()->clear_authenticated($this->request->param('strategy'));
-        $this->redirect(URL::site(Route::get('kopauth')->uri()));
+        $this->redirect(Route::url('kopauth', null, true));
     }
 }
     
